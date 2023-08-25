@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Mi Frontend - Puertos</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Logistica INGENEO</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="Cliente.html">Clientes</a>
+        <a href="Pais.html">Países</a>
+        <a href="Bodega.html">Bodegas</a>
+        <a href="Puerto.html">Puertos</a>
+        <a href="TipoDeProducto.html">Productos</a>
+        <a href="EnvioMaritimo.html">Envio Maritimo</a>
+        <a href="EnvioTerrestre.html">Envio Terrestre</a>
+      <!-- Agrega aquí los otros enlaces -->
+    </div>
+    <!-- Contenido de la página -->
+    <h2>Puertos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Ubicacion</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="puerto-lista">
+        <!-- Aquí se agregarán los datos de los clientes -->
+      </tbody>
+    </table>
+    <button onclick="abrirFormularioNuevoPuerto()">Agregar Nuevo Puerto</button>
+    
+
+    <div id="formulario-nuevo-puerto" style="display: none;">
+        <h2>Agregar Nuevo Puerto</h2>
+        <form id="form-nuevo-puerto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="ubicacion">Ubicacion:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required><br><br>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <!-- Opciones de países se agregarán aquí usando JavaScript -->
+            </select><br><br>
+            <button type="submit">Agregar</button>
+            <button type="button" onclick="cerrarFormularioNuevoPuerto()">Cancelar</button>
+        </form>
+    </div>
+    
+  </div>
+  
+  
+  <script src="scripts/api.js"></script>
+  <script src="scripts/puerto.js"></script>
+</body>
+</html>

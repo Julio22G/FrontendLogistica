@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Países - Logistica INGENEO</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Logistica INGENEO</h1>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Inicio</a>
+      <a href="Cliente.html">Clientes</a>
+      <a href="Pais.html">Países</a>
+      <a href="Bodega.html">Bodegas</a>
+      <a href="Puerto.html">Puertos</a>
+      <a href="TipoDeProducto.html">Productos</a>
+      <a href="EnvioMaritimo.html">Envio Maritimo</a>
+      <a href="EnvioTerrestre.html">Envio Terrestre</a>
+      <!-- Agrega enlaces a otras páginas aquí -->
+    </div>
+    <div class="content">
+      <h2>Lista de Países</h2>
+      <button onclick="agregarPais()">Agregar País</button>
+      <table id="paises-lista">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Código ISO2</th>
+          <th>Acciones</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/paises.js"></script>
+</body>
+</html>

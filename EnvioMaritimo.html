@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi Frontend - Clientes</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <h1>Logistica INGENEO</h1>
+      </div>
+      <div class="navbar">
+          <a href="index.html">Inicio</a>
+          <a href="Cliente.html">Clientes</a>
+          <a href="Pais.html">Países</a>
+          <a href="Bodega.html">Bodegas</a>
+          <a href="Puerto.html">Puertos</a>
+          <a href="TipoDeProducto.html">Productos</a>
+          <a href="EnvioMaritimo.html">Envio Maritimo</a>
+          <a href="EnvioTerrestre.html">Envio Terrestre</a>
+        <!-- Agrega aquí los otros enlaces -->
+      </div>
+    <h2>Envíos Marítimos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cliente</th>
+          <th>Producto</th>
+          <th>Puerto</th>
+          <th>Fecha Registro</th>
+          <th>Fecha Entrega</th>
+          <th>Precio Envio</th>
+          <th>Numero Flota</th>
+          <th>Numero Guia</th>
+          <th>Descuento Aplicado</th>
+          <th>Cantidad Producto</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="maritimo-lista">
+        <!-- Aquí se agregarán los datos de los envíos marítimos -->
+      </tbody>
+    </table>
+    <button onclick="abrirFormularioNuevoEnvio()">Agregar Nuevo Envío Marítimo</button>
+    
+    <div id="form-nuevo-maritimo" style="display: none;">
+        <h2>Agregar Nuevo Envío Marítimo</h2>
+        <form id="form-nuevo-maritimo">
+            <!-- ... otros campos ... -->
+            <label for="cliente">Cliente:</label>
+            <select id="cliente" name="cliente" required>
+                <!-- Opciones de clientes se agregarán aquí usando JavaScript -->
+            </select><br><br>
+            <label for="tipoProducto">Tipo de Producto:</label>
+            <select id="tipoProducto" name="tipoProducto" required>
+                <!-- Opciones de tipos de producto se agregarán aquí usando JavaScript -->
+            </select><br><br>
+            <label for="puerto">Puerto:</label>
+            <select id="puerto" name="puerto" required>
+            </select><br><br>
+            <!-- Opciones de puertos se agregarán aquí usando JavaScript -->
+            <label for="fechaRegistro">Fecha Registro:</label>
+            <input type="datetime-local" id="fechaRegistro" name="fechaRegistro" required><br><br>
+            <label for="fechaEntrega">Fecha Entrega:</label>
+            <input type="datetime-local" id="fechaEntrega" name="fechaEntrega" required><br><br>
+            <label for="precioEnvio">Precio Envío:</label>
+            <input type="number" id="precioEnvio" name="precioEnvio" step="0.01" required><br><br>
+            <label for="numeroFlota">Número Flota:</label>
+            <input type="text" id="numeroFlota" name="numeroFlota" required><br><br>
+            <label for="numeroGuia">Número Guía:</label>
+            <input type="text" id="numeroGuia" name="numeroGuia" required><br><br>
+            <label for="descuentoAplicado">Descuento Aplicado:</label>
+            <input type="number" id="descuentoAplicado" name="descuentoAplicado" step="0.01" required><br><br>
+            <label for="cantidadProducto">Cantidad Producto:</label>
+            <input type="number" id="cantidadProducto" name="cantidadProducto" required><br><br>
+            </select><br><br>
+            <button type="submit">Agregar</button>
+            <button type="button" onclick="cerrarFormularioNuevoEnvio()">Cancelar</button>
+        </form>
+    </div>
+  </div>
+  
+  <script src="scripts/api.js"></script>
+  <script src="scripts/maritimo.js"></script>
+</body>
+</html>

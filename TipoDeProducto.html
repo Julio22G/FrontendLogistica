@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Bodega - Logistica INGENEO</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Logistica INGENEO</h1>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Inicio</a>
+      <a href="Cliente.html">Clientes</a>
+      <a href="Pais.html">Países</a>
+      <a href="Bodega.html">Bodegas</a>
+      <a href="Puerto.html">Puertos</a>
+      <a href="TipoDeProducto.html">Productos</a>
+      <!-- Agrega enlaces a otras páginas aquí -->
+    </div>
+    <div class="content">
+        <h2>Lista de Productos</h2>
+        <button onclick="agregarProducto()">Agregar Producto</button>
+        <table id="Producto-lista"> 
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Acciones</th>
+          </tr>
+        </table>
+      </div>
+  </div>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/producto.js"></script>
+</body>
+</html>

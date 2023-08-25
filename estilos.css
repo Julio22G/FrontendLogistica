@@ -1,0 +1,70 @@
+/* estilos.css */
+
+/* Reset de estilos básicos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Encabezado */
+  .header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Enlaces de navegación */
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+  }
+  
+  /* Tabla */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  /* Botones */
+  .button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
